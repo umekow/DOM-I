@@ -131,3 +131,6 @@ p[8].textContent = siteContent['footer']['copyright'];
 //eventlistener
 
 button.addEventListener('click', () =>{ console.log("button was clicked")}); 
+
+//turns anchor tag back to original color
+button.addEventListener('click', () => {nav_items.forEach((item) => item.style.color= "#b0b0b0")});
