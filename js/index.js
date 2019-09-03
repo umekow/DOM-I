@@ -52,7 +52,7 @@ nav_items[4].textContent = siteContent["nav"]["nav-item-5"];
 nav_items[5].textContent = siteContent["nav"]["nav-item-6"]; 
 
 //change colors
-nav_items.forEach(item => item.style.color = "green");
+nav_items.forEach(item => item.style.color="green");
 
 
 //appendChild
@@ -76,13 +76,17 @@ document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-s
 
 document.getElementById('middle-img').setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//h1
 const h1 = document.querySelector('h1');
 
 h1.textContent= siteContent["cta"]['h1'];
 h1.style.wordSpacing = '600px';
+
+//button
 const button = document.querySelector('button'); 
 button.textContent = siteContent["cta"]["button"]; 
 
+//all h4 and p elements on the page
 const h4 = document.querySelectorAll('h4');
 const p = document.querySelectorAll('p'); 
 
@@ -122,3 +126,8 @@ p[7].textContent = siteContent['contact']['email'];
 //footer
 
 p[8].textContent = siteContent['footer']['copyright'];
+
+
+//eventlistener
+
+button.addEventListener('click', () =>{ console.log("button was clicked")}); 
